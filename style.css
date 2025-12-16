@@ -1,0 +1,227 @@
+.developer-bar {
+    width: 640px;
+    height: 63px;
+    background-color: aqua;
+    margin-top: 35px;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(to right, #2f5061, #60a4c7);
+    box-shadow: 3px 5px 5px  rgba(0,0,0,0.15); 
+}
+
+/* 프로필 바안에 글씨  */
+.developer {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 20px;
+    color: rgb(253, 248, 248);
+    
+}
+
+/* 프로필 / 이름 박스 */
+.name {
+    display: flex; 
+    align-items: center;
+}
+
+/* 프로필 이름바 */
+.name-bar {
+    width: 1640px;
+    height: 126px;
+    background-color: rgb(88, 139, 122);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #2f5061, #60a4c7);
+    box-shadow: 3px 5px 5px  rgba(0,0,0,0.20);
+    margin-top: 50px;
+}
+
+/* 프로필 (박스) */
+.profile-box {
+    margin-left: 48px;
+    width: 194px;
+    height: 191px;
+    /* background-color: rgb(207, 163, 163); */
+    
+}
+
+/* 프로필 흰색 */
+.profile-white {
+    width: 194px;
+    height: 191px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 5px  rgba(0,0,0,0.15);;
+    
+}
+
+/* 프로필 회색 */
+.profile-grey {
+    width: 95%;
+    height: 95%;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* 프로필 이미지 */
+.profile-img {
+
+}
+
+/* 한/영 이름박스 */
+.name-center {
+    display: flex;
+    gap: 20px;
+}
+
+/* 한) 이름 */
+.kr-name {
+    margin-left: 130px;
+    font-size: 46px;
+    font-weight: 800;
+    color: white;
+}
+
+/* 영) 이름 */
+.en-name {
+    margin-top: 36px;
+    color: white;
+
+}
+/* 왼쪽 영역 박스 */
+.left-bar {
+    width: 230px;
+    height: 1800px;
+    background: linear-gradient(to bottom, #336E72, #58BDC3,#62D0D8,#336E72);
+    box-shadow: 5px 0 3px rgba(0,0,0,0.55);
+    
+}
+
+/* 왼쪽 영역 + 프로필 박스 */
+.left-profile-bar {
+    position: absolute;
+}
+
+/* 왼쪽영역 중앙글 전체박스 */
+
+.profile-all {
+    position: absolute;
+}
+
+/* 텍스트 영역 박스 */
+.left-text {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+
+/* 자기소개 */
+.introduction {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 300px ;
+    
+}
+
+/* 자기소개 줄 */
+.top-introduction, .center-skill, .center-contact, .center-Tools {
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+/* 연락처 */
+.contact, .tools, .lamguage, .skill{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 40px;
+    
+    
+    
+}
+
+/* 언어 */
+.bottom-lamguage {
+    font-size: 20px ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*  본문 1열 */
+.first-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+    margin-left: 80px;
+    font-size: 30px;
+    gap: 130px;
+}
+
+.centent {
+    display: flex;
+}
+
+/* 중간 행 높이 */
+.learning {
+    display: flex;
+    margin-top: 130px;
+}
+
+/*  헤더 정렬  */
+.school-left, .education-left, .university, .learning-left, .goals-left {
+    width: 700px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    background-color: #2f5061;
+}
+
+.goals-left {
+    display: flex;
+}
+
+/* 블록 네모박스 */
+.school-block, .education-block, .university-block, .learning-block, .goals-block{
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+    background-color: #141414;
+    border-radius: 20px 0 0 20px ;
+    
+}
+
+/* 고등학교,대학교 등 텍스트 공백 */
+.school-text, .university-text, .learning-text, .goals-text {
+    margin-left: 140px;
+}
+
+/* 글자간(행) 높이 */
+.graduation, .learning-text, .goals-text {
+    line-height: 1.8;
+}
+
+/* 전공전환 사유 높낮이 */
+.reason {
+    line-height: 1.2;
+}
+
+/* 헤더 위아래 공백 */
+.education, .learning  {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+/* 왼쪽바 뺴고 전체 띄우기 */
+.all {
+    display: flex;
+    position: relative;
+}
