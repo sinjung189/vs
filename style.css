@@ -1,12 +1,13 @@
+/* 프로필 맨위바 */
 .developer-bar {
     width: 640px;
     height: 63px;
-    background-color: aqua;
     margin-top: 35px;
     display: flex;
     justify-content: end;
     background: linear-gradient(to right, #2f5061, #60a4c7);
-    box-shadow: 3px 5px 5px  rgba(0,0,0,0.15); 
+    box-shadow: 3px 5px 5px  rgba(0,0,0,0.15);
+     
 }
 
 /* 프로필 바안에 글씨  */
@@ -22,6 +23,7 @@
 .name {
     display: flex; 
     align-items: center;
+    position: absolute;
 }
 
 /* 프로필 이름바 */
@@ -33,13 +35,14 @@
     align-items: center;
     background: linear-gradient(to right, #2f5061, #60a4c7);
     box-shadow: 3px 5px 5px  rgba(0,0,0,0.20);
-    margin-top: 50px;
+    margin-top: 90px;
+    position: absolute;
 }
 
 /* 프로필 (박스) */
 .profile-box {
-    margin-left: 48px;
-    width: 194px;
+    margin-left: 12px;
+    width: 194px; 
     height: 191px;
     /* background-color: rgb(207, 163, 163); */
     
@@ -67,9 +70,7 @@
 }
 
 /* 프로필 이미지 */
-.profile-img {
 
-}
 
 /* 한/영 이름박스 */
 .name-center {
@@ -135,6 +136,10 @@
     
 }
 
+.top-introduction {
+    margin-right: 20px ;
+}
+
 /* 연락처 */
 .contact, .tools, .lamguage, .skill{
     font-size: 20px;
@@ -155,18 +160,23 @@
 }
 
 /*  본문 1열 */
-.first-column {
+.first-column, .second-column {
+    width: 700px;
     display: flex;
     flex-direction: column;
     margin-top: 350px;
     margin-left: 80px;
     font-size: 30px;
     gap: 130px;
+   
 }
 
 .centent {
     display: flex;
 }
+
+/* 본문 2번째 열 */
+
 
 /* 중간 행 높이 */
 .learning {
@@ -175,12 +185,12 @@
 }
 
 /*  헤더 정렬  */
-.school-left, .education-left, .university, .learning-left, .goals-left {
+.school-left, .education-left, .university, .learning-left, .goals-left, .application-left, .certificate-left {
     width: 700px;
-    font-size: 18px;
+    font-size: 22px;
     display: flex;
     align-items: center;
-    background-color: #2f5061;
+    /* background-color: #8eb5c9; */
 }
 
 .goals-left {
@@ -188,7 +198,7 @@
 }
 
 /* 블록 네모박스 */
-.school-block, .education-block, .university-block, .learning-block, .goals-block{
+.school-block, .education-block, .university-block, .learning-block, .goals-block, .application-block, .certificate-block{
     width: 20px;
     height: 20px;
     margin-right: 40px;
@@ -198,12 +208,12 @@
 }
 
 /* 고등학교,대학교 등 텍스트 공백 */
-.school-text, .university-text, .learning-text, .goals-text {
-    margin-left: 140px;
+.school-text, .university-text, .learning-text, .goals-text, .certificate-text {
+    margin-left: 100px;
 }
 
 /* 글자간(행) 높이 */
-.graduation, .learning-text, .goals-text {
+.graduation, .learning-text, .goals-text, .certificate-text {
     line-height: 1.8;
 }
 
@@ -213,12 +223,16 @@
 }
 
 /* 헤더 위아래 공백 */
-.education, .learning  {
+.education, .learning, .application  {
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
 
+.school-text, .university-left, .learning-text, .goals-text, .certificate-text {
+    font-size: 18px;
+    font-weight: 500;
+}
 
 /* 왼쪽바 뺴고 전체 띄우기 */
 .all {
