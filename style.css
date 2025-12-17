@@ -65,11 +65,22 @@
 .profile-grey {
     width: 95%;
     height: 95%;
-    background-color: gray;
+    background-color: rgb(184, 178, 178);
     border-radius: 50%;
+    overflow: hidden;
 }
 
 /* 프로필 이미지 */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
 
 
 /* 한/영 이름박스 */
@@ -95,7 +106,7 @@
 /* 왼쪽 영역 박스 */
 .left-bar {
     width: 230px;
-    height: 1800px;
+    height: 1600px;
     background: linear-gradient(to bottom, #336E72, #58BDC3,#62D0D8,#336E72);
     box-shadow: 5px 0 3px rgba(0,0,0,0.55);
     
@@ -136,32 +147,84 @@
     
 }
 
+/* 자기소개 헤더 박스  */
 .top-introduction {
-    margin-right: 20px ;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px ;
+    
 }
 
-/* 연락처 */
+/* 자기소개 아이콘 */
+.introduction-svg {
+    margin-right: 10px
+}
+
+/* 연락처 정렬 & 폰트사이즈 */
 .contact, .tools, .lamguage, .skill{
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.02em;
     line-height: 40px;
-    
-    
-    
+}
+
+/* 연락처 박스 */
+.center-contact {
+    display: flex;
+    justify-content: center;
+}
+
+/* 연락처 아이콘 */
+.contact-svg {
+    margin-top: 3px;
+    margin-right: 10px;
 }
 
 /* 언어 */
 .bottom-lamguage {
+    display: flex;
+    justify-content: center;
     font-size: 20px ;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
+    text-align: center;
 }
+
+/* 언어 아이콘 */
+.lamguage-svg {
+    margin-top: 2px;
+    margin-right: 10px
+}
+
+/* 기술 헤더 박스 */
+.center-skill {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 기술 아이콘 */
+.skill-svg {
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+/* 툴 헤더 */
+.center-tools {
+    display: flex;
+    justify-content: center;
+}
+
+/* 툴 아이콘 */
+.tools-svg {
+    margin-top: 4px;
+    margin-right: 6px;
+}
+
 
 /*  본문 1열 */
 .first-column, .second-column {
-    width: 700px;
     display: flex;
     flex-direction: column;
     margin-top: 350px;
@@ -171,12 +234,22 @@
    
 }
 
+/* 내용 정렬 */
 .centent {
     display: flex;
 }
 
+/* 교육, 활용 아이콘 */
+.education-block, .application-block {
+    margin-right: 40px;
+}
+
+
 /* 본문 2번째 열 */
 
+.second-column {
+    z-index: 100;
+}
 
 /* 중간 행 높이 */
 .learning {
@@ -184,7 +257,7 @@
     margin-top: 130px;
 }
 
-/*  헤더 정렬  */
+/*  헤더(류) 정렬  */
 .school-left, .education-left, .university, .learning-left, .goals-left, .application-left, .certificate-left {
     width: 700px;
     font-size: 22px;
@@ -193,12 +266,13 @@
     /* background-color: #8eb5c9; */
 }
 
+/* 목표 정렬 */
 .goals-left {
     display: flex;
 }
 
 /* 블록 네모박스 */
-.school-block, .education-block, .university-block, .learning-block, .goals-block, .application-block, .certificate-block{
+.school-block, .university-block, .learning-block, .goals-block, .certificate-block{
     width: 20px;
     height: 20px;
     margin-right: 40px;
@@ -238,4 +312,174 @@
 .all {
     display: flex;
     position: relative;
+    margin: 0 auto;
+    
+}
+
+.en-svg {
+    position: absolute;
+}
+
+/* j svg */
+.j-bar {
+    width: 217px;
+    height: 177px;  
+    position: absolute;
+    margin-top: 990px;
+    margin-left: 1170px;
+    
+}
+
+/* c svg */
+
+.c-bar {
+    width: 140px;
+    height: 177px;  
+    position: absolute;
+    margin-top: 870px;
+    margin-left: 1040px;
+    z-index: 10;
+}
+/* h svg */
+.h-bar {
+    width: 100px;
+    height: 100px;  
+    position: absolute;
+    margin-top: 870px;
+    margin-left: 1400px;
+    
+}
+/* s svg */
+.s-bar {
+    width: 67px;
+    height: 177px;  
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 1400px;
+    
+}
+
+
+/* 더보기 메모박스 */
+.memo-box {
+    display: flex;
+}
+
+/* 더보기 글 */
+.memo-btn {
+    margin-left: 100px;
+    font-weight: 600;
+}
+
+/* 더보기 안에 텍스트 */
+.memo-text {
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #f1f0f0b0;
+    pointer-events: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* 더보기 화살표 정렬 */
+.memo-box  .triangular {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 더보기 아래 화살표 */
+.triangular-box {
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    margin-top: 8px;
+    border: 2px solid;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(45deg);
+    
+}
+
+/* 더보기 누른 상태 보이게 */
+.triangular-box:active + .memo-text {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 크마 표시  */
+.merry-christmas {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    width: 800px;
+    height: 60px;
+    background-color: hsl(200, 35%, 28%);
+    color: #fff;
+    position: absolute;
+    transform: scaleX(0.01);
+    transform-origin: left;
+    /* opacity: 0; */
+    transition: transform 0.9s ease;
+}
+
+/* 호버 시 크마 표시 */
+.merry-christmas:hover {
+        transform: scaleX(1.5);
+        /* opacity: 1; */
+    }
+
+/* 호버 시 확대 */
+.profile-img {
+    transition: transform 0.3s ease;
+     transform-origin: 55% 40%;
+}
+
+/* 호버 시 확대2 */
+.profile-img:hover {
+    transform: scale(3)
+}
+@media (max-width:1280px){
+    .all {
+        max-width: 100%;
+        background-color: #b2d1d3;
+        
+    }
+    
+    .centent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-bar {
+        height: 2500px;
+    }
+    
+    .lamguage {
+        margin-top: 900px;
+    }
+
+    .second-column {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:393px) {
+    .all {
+        /* width: 100%; */
+        background-color: #336E72;
+        
+    }
+    
+    .centent-all {
+         min-width: 0;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+    }
 }
