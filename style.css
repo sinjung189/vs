@@ -7,6 +7,7 @@
     justify-content: end;
     background: linear-gradient(to right, #2f5061, #60a4c7);
     box-shadow: 3px 5px 5px  rgba(0,0,0,0.15);
+    flex-wrap: wrap; 
      
 }
 
@@ -231,7 +232,7 @@
     margin-left: 80px;
     font-size: 30px;
     gap: 130px;
-   
+    
 }
 
 /* 내용 정렬 */
@@ -308,12 +309,21 @@
     font-weight: 500;
 }
 
-/* 왼쪽바 뺴고 전체 띄우기 */
 .all {
-    display: flex;
-    position: relative;
-    margin: 0 auto;
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* margin: 0 auto; */
     
+        
+    }
+
+/* 전체 */
+.all-bars {
+    display: flex;
+    max-width: 1280px;
 }
 
 .en-svg {
@@ -447,16 +457,24 @@
 }
 @media (max-width:1280px){
     .all {
-        max-width: 100%;
-        background-color: #b2d1d3;
+        max-width: 1280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+    
+        background-color: #10757c;
         
     }
+
+    .all-bars {
+    display: flex;
+    max-width: 1280px;
     
-    .centent {
-        display: flex;
-        flex-direction: column;
     }
 
+  
     .left-bar {
         height: 2500px;
     }
@@ -468,18 +486,84 @@
     .second-column {
         margin-top: 200px;
     }
-}
 
-@media (max-width:393px) {
-    .all {
-        /* width: 100%; */
-        background-color: #336E72;
-        
+    .centent {
+        display: flex;
+        flex-direction: column;
     }
     
-    .centent-all {
-         min-width: 0;
-  word-break: keep-all;
-  overflow-wrap: break-word;
+}
+
+@media (max-width:840px) {
+    .all {
+        margin:0;
+        background-color: #d3e3e4;
+        
+    }
+    .left-bar {
+        height: 2500px;
+    }
+    
+    .lamguage {
+        margin-top: 900px;
+    }
+
+    .second-column {
+        margin-top: 200px;
+    }
+    
+
+    
+    .kr-name, .en-name {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .name-center {
+        margin-left: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+
+
+    .school-left, .education-left, .university, .learning-left, .goals-left, .application-left, .certificate-left {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+           
+                     
+ 
+    }
+    
+    .education {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .education-left {
+        min-width: 0;  
+        word-break: keep-all;
+        overflow-wrap: break-word;
+  
+    }
+    
+ 
+    .school-block, .university-block, .learning-block, .goals-block, .certificate-block {
+        display: none;
+    }   
+    
+    .school-text, .university-text, .learning-text, .goals-text, .certificate-text {
+        list-style: none;
+    }
+
+
+    .second-column {
+        margin-top: 200px;
     }
 }
