@@ -309,21 +309,20 @@
     font-weight: 500;
 }
 
-.all {
-        max-width: 1280px;
+/* .all {
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        /* margin: 0 auto; */
+        margin: 0 auto;
     
         
-    }
+    } */
 
 /* 전체 */
 .all-bars {
     display: flex;
-    max-width: 1280px;
+    /* max-width: 1280px; */
 }
 
 .en-svg {
@@ -378,7 +377,7 @@
 /* 더보기 글 */
 .memo-btn {
     margin-left: 100px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* 더보기 안에 텍스트 */
@@ -456,22 +455,19 @@
     transform: scale(3)
 }
 @media (max-width:1280px){
-    .all {
-        max-width: 1280px;
+.all {
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     
-        background-color: #10757c;
         
     }
 
-    .all-bars {
-    display: flex;
-    max-width: 1280px;
-    
+        /* 전체 */
+        .all-bars {
+        display: flex;
+        max-width: 1280px;
     }
 
   
@@ -501,7 +497,7 @@
         
     }
     .left-bar {
-        height: 2500px;
+        height: 100%
     }
     
     .lamguage {
@@ -513,7 +509,7 @@
     }
     
 
-    
+    /* 이름 중앙 */
     .kr-name, .en-name {
         margin-left: 0;
         margin-top: 0;
@@ -530,29 +526,27 @@
 
 
 
+    .first-column {
+        text-align: center;
+        background-color: #2f5061;
+        
+    }
+
 
     .school-left, .education-left, .university, .learning-left, .goals-left, .application-left, .certificate-left {
 
+        
+        width: 50%;
+        background-color: #98abb4;
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* flex-direction: column; */
+        /* text-align: center; */
            
                      
  
     }
-    
-    .education {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .education-left {
-        min-width: 0;  
-        word-break: keep-all;
-        overflow-wrap: break-word;
-  
-    }
-    
  
     .school-block, .university-block, .learning-block, .goals-block, .certificate-block {
         display: none;
@@ -565,5 +559,10 @@
 
     .second-column {
         margin-top: 200px;
+    }
+
+    .merry-christmas {
+        width: 100%;
+        
     }
 }
