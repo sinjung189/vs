@@ -660,7 +660,6 @@
 
     .university-text {
         margin-right: 60px;
-        background-color: #2f5061;
     }
 
     .school-left, .university-header {
@@ -678,13 +677,24 @@
     }
 
 
-    .triangular-box {
-        margin-top: 40px;
-        transform: rotate(-45deg);
-    }
-
   .contact-header, .introduction-header, .tools-header, .skill-header {
-        font-size: 25opx;
+        font-size: 25px;
   }
+  
+   .memo-box {
+    display: flex;
+    flex-direction: column;
+
+   }
+
+   .memo-btn {
+    margin-right: 450px;
+    font-size: 18px;
+   }
+
+   .triangular-box {
+    margin-left: 132px;
+   }
+s
   
 }
